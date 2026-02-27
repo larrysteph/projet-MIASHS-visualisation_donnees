@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil — Projet Chart.js</title>
+
+  <style>
+
+   .intro p {
+      font-weight: 500;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+   }
+
+   .intro {
+      background-color: rgba(255, 255, 255, 0.15);
+      padding: 25px;
+      border-radius: 18px;
+      line-height: 1.7;
+      backdrop-filter: blur(6px);
+   }
+
+   body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(
+        to bottom,
+        rgb(255, 159, 64) 0%,
+        rgb(0, 199, 193) 60%
+      );
+   }
+
+    header {
+      background-color: rgb(255, 159, 64);
+      padding: 25px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .container {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-top: 50px;
+      font-size: 24px;
+    }
+
+    .membre {
+      background-color: white;
+      color: black;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 25px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      transition: 0.3s ease;
+    }
+
+    .membre:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    .membre h3 {
+      margin-top: 0;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(255, 159, 64);
+      padding: 8px 14px;
+      border-radius: 20px;
+      transition: 0.3s;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    a:hover {
+      background-color: rgb(0, 199, 193);
+      color: white;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Défi 2 - Visualisation de données</h1>
+  </header>
+
+  <div class="container">
+
+    <div class="intro">
+      <p>
+        Bienvenue sur notre projet de visualisation de données réalisé avec Chart.js.
+        Ce site présente différentes analyses basées sur les données publiques de l’enseignement supérieur.
+        Choisissez un membre du groupe pour accéder à sa page.
+      </p>
+    </div>
+
+    <h2>Membres du groupe:</h2>
+
+    <div class="membre">
+      <h3>LARRY STEPHANE</h3>
+      <a href="ex1.html">Voir la page de Larry</a>
+    </div>
+
+    <div class="membre">
+      <h3>ERIC</h3>
+      <a href="Nom2.html">Voir la page</a>
+    </div>
+
+    <div class="membre">
+      <h3>RAWAA</h3>
+      <a href="Nom3.html">Voir la page</a>
+    </div>
+
+    <div class="membre">
+      <h3>ANNIE</h3>
+      <a href="Nom4.html">Voir la page</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

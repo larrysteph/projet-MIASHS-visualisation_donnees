@@ -1,51 +1,114 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>LICENCE 2 MIASHS - Graphiques isncrits Toulouse </title>
+<meta charset="UTF-8">
+<title>LICENCE 2 MIASHS - Graphiques inscrits Toulouse</title>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, rgb(255,159,64), rgb(0,199,193));
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 0;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.section {
+  margin: 40px 0;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.conclusion {
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  line-height: 1.7;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+</style>
+
 </head>
+
 <body>
 
-  <h1>Les inscrits en L2 MIASHS (UT2J)</h1>
+<div class="container">
 
-  <h2>Graphique — Evolution des inscrits:</h2>
-  <canvas id="myChart" width="700" height="350"></canvas>
-  <hr>
+<h1>LICENCE 2 MIASHS — Toulouse</h1>
 
-  <h2>Graphique — Evolution des inscrits (Hommes / Femmes:)</h2>
-  <canvas id="myChart2" width="700" height="350"></canvas>
+<div class="section">
+<h2>Évolution des inscrits</h2>
+<canvas id="myChart" width="700" height="350"></canvas>
+</div>
 
-  <hr>
+<div class="section">
+<h2>Évolution Hommes / Femmes</h2>
+<canvas id="myChart2" width="700" height="350"></canvas>
+</div>
 
-  <h1>LICENCE 2 MIASHS - Graphiques isncrits Paris(API)</h1>
+<h1>LICENCE 2 MIASHS — Université Paris Nanterre (API)</h1>
 
-  <h2>Graphique — Evolution Université Paris Nanterre (Hommes / Femmes:):</h2>
-  <canvas id="myChartPerso" width="700" height="350"></canvas>
+<div class="section">
+<h2>Évolution Hommes / Femmes</h2>
+<canvas id="myChartPerso" width="700" height="350"></canvas>
+</div>
 
-  <hr>
-  <h1>Conclusion comparative:</h1>
+<h1 style="text-align:center;">Conclusion comparative</h1>
 
-  
-  <p>L’étude des graphiques met en évidence des dynamiques assez différentes entre Toulouse et l’Université Paris Nanterre. À Toulouse, les effectifs restent globalement stables sur l’ensemble de la période : on observe quelques variations, mais aucune rupture marquée. La répartition entre hommes et femmes y demeure relativement équilibrée, même si les hommes restent légèrement majoritaires selon les années.
+<div class="conclusion">
+L’étude des graphiques met en évidence des dynamiques assez différentes entre Toulouse et l’Université Paris Nanterre. À Toulouse, les effectifs restent globalement stables sur l’ensemble de la période : on observe quelques variations, mais aucune rupture marquée. La répartition entre hommes et femmes y demeure relativement équilibrée, même si les hommes restent légèrement majoritaires selon les années.
+
+<br><br>
 
 À Paris Nanterre, la situation est plus contrastée. Les effectifs connaissent des fluctuations plus importantes, avec notamment un pic notable autour de 2019-2020, suivi d’une baisse progressive. L’évolution y apparaît donc plus irrégulière, et les écarts entre hommes et femmes varient davantage d’une année à l’autre.
 
-En somme, Toulouse présente une évolution plus régulière et linéaire des effectifs en MIASHS, tandis que Paris se caractérise par une dynamique plus instable, marquée par des variations plus fortes. Ces différences peuvent refléter des niveaux d’attractivité distincts ou des évolutions démographiques propres à chaque université.</p>
+<br><br>
 
-<hr>
+En somme, Toulouse présente une évolution plus régulière et linéaire des effectifs en MIASHS, tandis que Paris se caractérise par une dynamique plus instable, marquée par des variations plus fortes.
+</div>
 
-<p style="margin-top:40px; font-size:14px; opacity:0.9;">
-Ce site a été réalisé dans le cadre du Projet Informatique SHS – Défi 2. 
-Certaines pages des autres membres du groupe peuvent ne pas être accessibles 
-dans cette version en ligne, car il s'agit d’un travail collectif dont chaque 
-membre développe sa propre page.
-</p>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<footer>
+Projet Informatique SHS — Défi 2. Certaines pages peuvent être indisponibles car il s’agit d’un travail collectif.
+</footer>
 
-  
-  <script src="script.js"></script>
-  <script src="scriptApi.js"></script>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+<script src="scriptApi.js"></script>
 
 </body>
 </html>

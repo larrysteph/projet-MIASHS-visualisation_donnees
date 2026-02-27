@@ -1,132 +1,134 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Accueil — Projet Chart.js</title>
+<meta charset="UTF-8">
+<title>Accueil — Projet Chart.js</title>
 
-  <style>
+<style>
 
-   .intro p {
-      font-weight: 500;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
-   }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: linear-gradient(135deg, rgb(255,159,64), rgb(0,199,193));
+}
 
-   .intro {
-      background-color: rgba(255, 255, 255, 0.15);
-      padding: 25px;
-      border-radius: 18px;
-      line-height: 1.7;
-      backdrop-filter: blur(6px);
-   }
+header {
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
 
-   body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-      background: linear-gradient(
-        to bottom,
-        rgb(255, 159, 64) 0%,
-        rgb(0, 199, 193) 60%
-      );
-   }
+.container {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    header {
-      background-color: rgb(255, 159, 64);
-      padding: 25px;
-      text-align: center;
-      letter-spacing: 1px;
-    }
+.intro {
+  background: rgba(255,255,255,0.12);
+  padding: 30px;
+  border-radius: 25px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+  line-height: 1.7;
+}
 
-    .container {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
+.intro p {
+  font-weight: 500;
+}
 
-    h2 {
-      margin-top: 50px;
-      font-size: 24px;
-    }
+h2 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 26px;
+}
 
-    .membre {
-      background-color: white;
-      color: black;
-      padding: 25px;
-      margin: 20px 0;
-      border-radius: 25px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-      transition: 0.3s ease;
-    }
+.membre {
+  padding: 30px;
+  margin: 25px 0;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+  transition: 0.35s ease;
+}
 
-    .membre:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-    }
+.membre:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 45px rgba(0,0,0,0.35);
+}
 
-    .membre h3 {
-      margin-top: 0;
-      font-weight: 600;
-      letter-spacing: 0.5px;
-    }
+.membre h3 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-    a {
-      text-decoration: none;
-      font-weight: bold;
-      color: rgb(255, 159, 64);
-      padding: 8px 14px;
-      border-radius: 20px;
-      transition: 0.3s;
-      display: inline-block;
-      margin-top: 10px;
-    }
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  border-radius: 25px;
+  background: rgba(0,0,0,0.25);
+  transition: 0.3s;
+}
 
-    a:hover {
-      background-color: rgb(0, 199, 193);
-      color: white;
-    }
+a:hover {
+  background: white;
+  color: rgb(0,199,193);
+}
 
-  </style>
-
+</style>
 </head>
+
 <body>
 
-  <header>
-    <h1>Défi 2 - Visualisation de données</h1>
-  </header>
+<header>
+  <h1>Défi 2 — Visualisation de données</h1>
+</header>
 
-  <div class="container">
+<div class="container">
 
-    <div class="intro">
-      <p>
-        Bienvenue sur notre projet de visualisation de données réalisé avec Chart.js.
-        Ce site présente différentes analyses basées sur les données publiques de l’enseignement supérieur.
-        Choisissez un membre du groupe pour accéder à sa page.
-      </p>
-    </div>
-
-    <h2>Membres du groupe:</h2>
-
-    <div class="membre">
-      <h3>LARRY STEPHANE</h3>
-      <a href="ex1.html">Voir la page de Larry</a>
-    </div>
-
-    <div class="membre">
-      <h3>ERIC</h3>
-      <a href="Nom2.html">Voir la page</a>
-    </div>
-
-    <div class="membre">
-      <h3>RAWAA</h3>
-      <a href="Nom3.html">Voir la page</a>
-    </div>
-
-    <div class="membre">
-      <h3>ANNIE</h3>
-      <a href="Nom4.html">Voir la page</a>
-    </div>
-
+  <div class="intro">
+    <p>
+      Bienvenue sur notre projet de visualisation de données réalisé avec Chart.js.
+      Ce site présente différentes analyses basées sur les données publiques de l’enseignement supérieur.
+      Choisissez un membre du groupe pour accéder à sa page.
+    </p>
   </div>
+
+  <h2>Membres du groupe</h2>
+
+  <div class="membre">
+    <h3>LARRY STEPHANE</h3>
+    <a href="ex1.html">Voir la page de Larry</a>
+  </div>
+
+  <div class="membre">
+    <h3>ERIC</h3>
+    <a href="Nom2.html">Voir la page</a>
+  </div>
+
+  <div class="membre">
+    <h3>RAWAA</h3>
+    <a href="Nom3.html">Voir la page</a>
+  </div>
+
+  <div class="membre">
+    <h3>ANNIE</h3>
+    <a href="Nom4.html">Voir la page</a>
+  </div>
+
+</div>
 
 </body>
 </html>
